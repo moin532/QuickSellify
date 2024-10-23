@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure to apply to the appropriate container */
+.banner-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hide overflow */
+}
+
+.banner-content {
+  display: flex;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-100%); /* End position */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 90s linear infinite; /* Scroll continuously */
+}
+
+@media only screen and (max-width: 600px) {
+  .img_show {
+    width: 90px;
+    height: 90px;
+  }
+  .img_main {
+    height: 39px;
+  }
+}

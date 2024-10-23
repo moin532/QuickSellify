@@ -1,0 +1,17 @@
+/* Responsive Image Adjustments */
+img {
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  img {
+    width: 90%; /* Make image smaller on larger screens */
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  img {
+    height: 160px; /* Reduce height on mobile devices */
+  }
+}
